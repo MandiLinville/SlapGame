@@ -1,0 +1,28 @@
+#target{
+    width: 200px;
+    padding-top:420px;
+}
+
+#health{
+    color: yellow;
+    font-size: 50px;
+}
+
+#btn {
+    font-size: 50px;
+}
+
+.backdrop{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    z-index: -1;
+    max-width: none;
+    width:100vw;
+}
+
+html{
+    overflow-x:hidden;
+    overflow-y:hidden;
+}

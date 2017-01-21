@@ -1,44 +1,52 @@
 var health = 100;
 
+function killPika() {
+    if(health<=0){
+    document.getElementById('target').src='./pikachuDead.png';
+}}
+
 function updateScreen() {
     var updateScreen;
     console.log(health);
     document.getElementById('health').innerText = health
 }
 
-function onSlap() {
+function checkDeath() {
     if (health <= 0) {
-        alert("Victory!!! Pikachu is dead!");
-    } else {
-        health = health - 1;
-        updateScreen()
+        document.getElementById('message').innerHTML = ("Victory!!! Pikachu is dead!");
     }
+}
+function zeroOutLife() {
+    if (health <= 0) {
+        health = 0
+    }
+}
+
+function applyDamage() {
+    zeroOutLife()
+    updateScreen()
+    checkDeath()
+    killPika()
+}
+
+function onSlap() {
+    health = health - 1;
+    applyDamage()
 }
 
 function onPunch() {
-    if (health <= 0) {
-        alert("Victory!!! Pikachu is dead!");
-    } else {
-        health = health - 5;
-        updateScreen()
-    }
+    health = health - 5;
+    applyDamage()
 }
 
 function onKick() {
-    if (health <= 0) {
-        alert("Victory!!! Pikachu is dead!");
-    } else {
-        health = health - 10;
-        updateScreen()
-    }
+    health = health - 10;
+    applyDamage()
 }
 
 function onHadouken() {
-    if (health <= 0) {
-        alert("Victory!!! Pikachu is dead!");
-    } else
-        health = health - 50;
-    updateScreen()
+    health = health - 50;
+    applyDamage()
 };
 
 

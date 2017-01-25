@@ -4,7 +4,7 @@ function GameController(){
 
 this.killPika = function() {
     if (gs.pikachu.health <= 0) {
-        document.getElementById('target').src = './gs.pikachuDead.png';
+        document.getElementById('target').src = './pikachuDead.png';
     }
 }
 
@@ -34,7 +34,7 @@ this.updateScreen = function() {
 
 this.checkDeath = function() {
     if (gs.pikachu.health <= 0) {
-        document.getElementById('message').innerHTML = ("Victory!!! gs.pikachu is dead!");
+        document.getElementById('message').innerHTML = ("Victory!!! Pikachu is dead!");
     }
 }
 this.zeroOutLife = function() {

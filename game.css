@@ -1,19 +1,19 @@
 #target{
     width: 200px;
-    padding-top:380px;
-    margin-left: 250px;
+    padding-top:180px;
+    margin-left: 350px;
 }
 
 #target2{
     width: 500px;
-    padding-top:340px;
+    padding-top:140px;
     padding-right:50px;
 }
 
 #health{
     color: yellow;
     font-size: 50px;
-    text-align: center;
+    text-align: right;
 }
 
 #health2{
@@ -43,7 +43,7 @@ html{
 
 #message{
     font-size: 50px;
-    color: red;
+    color: white;
 }
 #text {
     font-size: 60px;

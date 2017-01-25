@@ -1,11 +1,25 @@
 #target{
     width: 200px;
-    padding-top:420px;
+    padding-top:380px;
+    margin-left: 250px;
+}
+
+#target2{
+    width: 500px;
+    padding-top:340px;
+    padding-right:50px;
 }
 
 #health{
     color: yellow;
     font-size: 50px;
+    text-align: center;
+}
+
+#health2{
+    color: purple;
+    font-size: 50px;
+    text-align: center;
 }
 
 #btn {
@@ -30,4 +44,8 @@ html{
 #message{
     font-size: 50px;
     color: red;
+}
+#text {
+    font-size: 60px;
+    color: white;
 }

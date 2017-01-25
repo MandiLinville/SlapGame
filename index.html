@@ -16,32 +16,52 @@
         alt="dojo">
     <div class="container">
         <div class="row">
+            <center><p id='text'> Attacks </p></center>
             <div class="col-sm-3">
                 <center>
-                    <button id="btn" onclick="onSlap()">Slap</button>
+                    <button id="btn" onclick="gc.onSlap()">Slap</button>
 </div>
 <div class="col-sm-3">
-    <button id="btn" onclick="onPunch()">Punch</button>
+    <button id="btn" onclick="gc.onPunch()">Punch</button>
 </div>
 <div class="col-sm-3">
-    <button id="btn" onclick="onKick()">Kick</button>
+    <button id="btn" onclick="gc.onKick()">Kick</button>
 </div>
 <div class="col-sm-3">
-    <button onclick="onHadouken()"><img src="http://i598.photobucket.com/albums/tt68/xXONEXx/Decorated%20images/hadouken.png" height="80" /></button>
+    <button onclick="gc.onHadouken()"><img src="https://i598.photobucket.com/albums/tt68/xXONEXx/Decorated%20images/hadouken.png" height="80" /></button>
+</div>
+<div class="row">
+   <center> <p id='text'> Resources </p></center>
+    <div class="col-sm-4">
+        <center>
+            <button id="btn" onclick="gc.useShield()">Shield</button>
+</div>
+<div class="col-sm-4">
+    <button id="btn" onclick="gc.pikaThunderStone()">ThunderStone</button>
+</div>
+<div class="col-sm-4">
+    <button id="btn" onclick="gc.pikaEvolveRaichu()">Evolve Raichu</button>
 </div>
 </center>
 </div>
 </div>
 </div>
-<div class="dummy">
-    <center>
-        <div id="message"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1 id="health2">100</h1>
+            <img id="target2" src="http://vignette1.wikia.nocookie.net/pokemon/images/c/c6/Team_Rocket_trio_XY.png/revision/latest?cb=20131221014744"
+            alt="teamRocket">
+        </div>
+        <div class="col-sm-6">
         <h1 id="health">100</h1>
-        <img id="target" src="http://www.imgnaly.com/wp-content/uploads/2015/05/Pikachu-Picture.png" alt="Pikachu"></center>
-</div>
+        <img id="target" src="http://www.imgnaly.com/wp-content/uploads/2015/05/Pikachu-Picture.png" alt="Pikachu">
 
-<script src="game.js"></script>
+</div>
+</div>
+</div>
+<script src="Game-Service.js"></script>
+<script src="Game-Controller.js"></script>
 </body>
 
 </html>
-
